@@ -1,7 +1,12 @@
 ---
 name: hello
 on:
-  workflow_dispatch:
+  push:
+    branches: main
+
+    paths:
+      - **.html
+      - **.yml
     
 jobs:
   greet:
